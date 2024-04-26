@@ -25,6 +25,16 @@ body {
 
 h1 {
   text-align: center;
+  border: solid rgb(173, 118, 118) 2px;
+  background-image: linear-gradient(
+    to right,
+    rgb(164, 164, 164) 0%,
+    rgb(227, 139, 115) 50%,
+    rgb(153, 153, 153) 100%
+  );
+  background-size: 200% 100%;
+  background-position: left bottom;
+  background-repeat: no-repeat;
 }
 
 img {
@@ -44,7 +54,7 @@ footer {
   margin-top: 100px;
 }
 
-.info {
+.about-info {
   color: white;
   text-align: left;
   margin-left: 50px;
