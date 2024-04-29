@@ -1,7 +1,11 @@
 body {
-  background-color: aquamarine;
+  background-color: rgb(255, 255, 255);
 }
 
 .navbar {
-    mar
+  background-color: aqua;
+}
+
+a {
+  margin-left: 100px;
 }
