@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Young+Serif&display=swap");
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar.hidden {
+  top: -100px;
+}
+.navbar {
+  background-color: chocolate;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: o;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: top 0.3s;
+  border: solid rgb(173, 118, 118) 2px;
+}
+
+.companyname {
+  border: solid rgb(255, 255, 255) 2px;
+  background-color: chocolate;
+  background-size: 200% 100%;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  margin-left: 20px;
+}
+
+.navbar a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.link {
+  margin-left: 100px;
+  margin-right: 100px;
+  text-decoration: none;
+}
+
+.search-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-container input[type="text"] {
+  padding: 10px;
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 50px;
+}
+
+.search-container button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background-color: #45a049;
+}

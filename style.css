@@ -1,20 +1,44 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Young+Serif&display=swap");
 body {
-  background-color: rgb(255, 235, 205);
+  background-color: rgb(255, 255, 255);
   font-family: "Roboto", sans-serif;
 }
 
+.navbar.hidden {
+  top: -100px;
+}
 .navbar {
-  background-color: rgb(255, 255, 255);
-  overflow: hidden;
-  text-align: center;
+  background-color: chocolate;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: o;
+  width: 100%;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
-  color: rgb(18, 11, 11);
-  padding: 20px 25px;
+  transition: top 0.3s;
+  border: solid rgb(173, 118, 118) 2px;
+}
+.companyname {
+  border: solid rgb(255, 255, 255) 2px;
+  background-color: chocolate;
+  background-size: 200% 100%;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  margin-left: 20px;
+}
+
+.navbar a {
+  color: rgb(255, 255, 255);
   text-decoration: none;
-  font-size: 20px;
-  border: 10px;
-  border-color: black;
+  margin-right: 20px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
 }
 
 .link {
@@ -25,16 +49,7 @@ body {
 
 h1 {
   text-align: center;
-  border: solid rgb(173, 118, 118) 2px;
-  background-image: linear-gradient(
-    to right,
-    rgb(250, 193, 143) 0%,
-    rgb(250, 175, 110) 50%,
-    rgb(251, 152, 66) 100%
-  );
-  background-size: 200% 100%;
-  background-position: left bottom;
-  background-repeat: no-repeat;
+  margin-top: 100px;
 }
 
 img {
@@ -42,24 +57,52 @@ img {
   border-radius: 50%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.introduction {
   margin-top: 50px;
+  text-align: center;
 }
 
 a {
   color: rgb(0, 0, 0);
 }
 
-footer {
-  background-color: black;
-  margin-top: 100px;
+li {
+  color: white;
+}
+
+.footer {
+  background-color: #f8f9fa;
+  color: #495057;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 .about-info {
-  color: white;
-  text-align: left;
-  margin-left: 50px;
+  font-weight: bold;
 }
 
-li {
-  color: white;
+.about-info,
+.footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer li {
+  margin-top: 5px;
+}
+
+.footer a {
+  color: #495057;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }
