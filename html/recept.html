@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recept</title>
+    <a href="index.html">Hem</a>
+    <link rel="stylesheet" href="recept.css" />
+  </head>
+
+  <header class="navbar">
+    <div class="companyname">Cake Bake</div>
+    <a class="link first" href="index.html">Home</a>
+    <a class="link second" href="recept.html">Recipes</a>
+    <a class="link third" href="sortiment.html">Our offers</a>
+  </header>
+  <body>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search for recipes..." />
+      <button onclick="searchRecipes()">Search</button>
+    </div>
+    <div class="result-display">Your recepies will be shown here</div>
+
+    <div id="recipeContainer"></div>
+  </body>
+  <script src="script.js"></script>
+</html>

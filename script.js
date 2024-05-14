@@ -1,5 +1,5 @@
  async function fetchAndDisplayData() {
-    const url = 'https://the-birthday-cake-db.p.rapidapi.com/5';
+    const url = 'https://the-birthday-cake-db.p.rapidapi.com/10';
     const options = {
       method: 'GET',
       headers: {
@@ -28,14 +28,14 @@
   }
   
   // Kör funktionen när sidan laddas
-  window.onload = fetchAndDisplayData;
+//   window.onload = fetchAndDisplayData;
 
  
 const recipes = [
   {
     id: "1",
     title: "Vegan Chocolate Cake",
-    image: "https://apipics.s3.amazonaws.com/cakes_api/5.jpg"
+    image: "https://apipics.s3.amazonaws.com/cakes_api/10.jpg"
  
   },
   {
@@ -43,7 +43,7 @@ const recipes = [
     title: "Vegan Lasagna",
    
   },
- 
+
 ];
 
 // Function to display recipes based on search query
@@ -79,4 +79,5 @@ function createRecipeHTML(recipe) {
   return recipeDiv;
 }
 
-// searchRecipes();
+
+searchRecipes();  

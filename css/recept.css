@@ -73,3 +73,8 @@ body {
 .search-container button:hover {
   background-color: #45a049;
 }
+
+.result-display {
+  text-align: center;
+  align-items: center;
+}
