@@ -2,6 +2,11 @@
 body {
   background-color: rgb(255, 255, 255);
   font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .navbar.hidden {
@@ -22,7 +27,6 @@ body {
   transition: top 0.3s;
   border: solid rgb(173, 118, 118) 2px;
 }
-
 .companyname {
   border: solid rgb(255, 255, 255) 2px;
   background-color: chocolate;
@@ -48,33 +52,67 @@ body {
   text-decoration: none;
 }
 
-.search-container {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.search-container input[type="text"] {
-  padding: 10px;
-  width: 300px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+.content-container {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-top: 50px;
 }
 
-.search-container button {
-  padding: 10px 20px;
-  background-color: #4caf50;
+.content-container h1 {
+  flex: 1;
+  margin-top: 50px;
+}
+
+.content-container img {
+  width: 400px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
+.introduction {
+  margin: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.introduction p {
+  font-size: 16px;
+  line-height: 1;
+}
+
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+li {
   color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
 }
 
-.search-container button:hover {
-  background-color: #45a049;
-}
-
-.result-display {
+footer {
+  background-color: chocolate;
+  color: white;
+  padding: 20px 0;
   text-align: center;
-  align-items: center;
+  margin-top: auto;
+}
+
+.footer-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-content ul li {
+  display: inline-block;
+  margin: 0 10px;
 }

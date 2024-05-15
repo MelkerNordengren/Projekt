@@ -80,4 +80,4 @@ function createRecipeHTML(recipe) {
 }
 
 
-searchRecipes();  
+// searchRecipes();  

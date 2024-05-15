@@ -2,6 +2,11 @@
 body {
   background-color: rgb(255, 255, 255);
   font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .navbar.hidden {
@@ -22,6 +27,7 @@ body {
   transition: top 0.3s;
   border: solid rgb(173, 118, 118) 2px;
 }
+
 .companyname {
   border: solid rgb(255, 255, 255) 2px;
   background-color: chocolate;
@@ -47,32 +53,64 @@ body {
   text-decoration: none;
 }
 
-.offer-section {
+.search-container {
   text-align: center;
-  margin-top: 100px; /* Justera efter behov */
+  margin-bottom: 20px;
 }
 
-.offer-section h2 {
-  background-color: rgba(255, 255, 255, 0.7); /* Nästan transparent bakgrund */
-  display: inline-block;
+.search-container input[type="text"] {
   padding: 10px;
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 50px;
 }
 
-.offer-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px; /* Justera efter behov */
+.search-container button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.offer {
-  margin: 0 20px;
+.search-container button:hover {
+  background-color: #45a049;
 }
 
-.offer img {
-  width: 200px; /* Justera efter behov */
-  height: auto; /* Behåll proportionerna */
+.result-display {
+  text-align: center;
+  align-items: center;
 }
 
-.offer p {
-  margin-top: 10px; /* Justera efter behov */
+#recipeContainer {
+  text-align: center;
+}
+
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+li {
+  color: white;
+}
+
+footer {
+  background-color: chocolate;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: auto;
+}
+
+.footer-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-content ul li {
+  display: inline-block;
+  margin: 0 10px;
 }
