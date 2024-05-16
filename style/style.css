@@ -67,6 +67,7 @@ body {
 .content-container h1 {
   flex: 1;
   margin-top: 50px;
+  margin-left: auto;
 }
 
 .content-container img {
@@ -74,7 +75,8 @@ body {
   height: 150px;
   object-fit: cover;
   border-radius: 10px;
-  margin-left: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .introduction {
