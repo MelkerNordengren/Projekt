@@ -61,7 +61,7 @@ body {
 .content-container h1 {
   flex: 1;
   margin-top: 50px;
-  margin-left: auto;
+  text-align: center;
 }
 
 .content-container img {

@@ -21,22 +21,29 @@
       <a class="link contact" href="kontakt.html">contact us</a>
     </header>
     <main>
-      <div class="intro-text">
-        <h1>Recepies</h1>
-        <h2>Search for the goodies you would like to make</h2>
-      </div>
+      <section>
+        <div class="intro-text">
+          <h1>Recepies</h1>
+          <h2>Search for the goodies you would like to make</h2>
+        </div>
 
-      <div class="search-container">
-        <input
-          type="text"
-          id="searchInput"
-          placeholder="Search for recipes..."
-        />
-        <button onclick="searchRecipes()">Search</button>
-      </div>
-      <div class="result-display">Your recepies will be shown here</div>
+        <div class="search-container">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search for recipes..."
+          />
+          <button onclick="searchRecipes()">Search</button>
+        </div>
+        <div class="result-display">Your recepies will be shown here</div>
 
-      <div id="recipeContainer"></div>
+        <div id="recipeContainer"></div>
+      </section>
+      <section>
+        <button onclick="backToTop()" id="backToTopBtn" title="Go to top">
+          <i class="fas fa-arrow-up"></i>
+        </button>
+      </section>
     </main>
 
     <footer>
