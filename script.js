@@ -28,7 +28,7 @@
   }
   
   // Kör funktionen när sidan laddas
-//   window.onload = fetchAndDisplayData;
+  window.onload = fetchAndDisplayData;
 
  
 const recipes = [
@@ -50,7 +50,7 @@ const recipes = [
 function searchRecipes() {
   const searchInput = document.getElementById("searchInput").value.toLowerCase();
   const recipeContainer = document.getElementById("recipeContainer");
-  recipeContainer.innerHTML = ""; // Clear previous results
+  recipeContainer.innerHTML = ""; 
 
   const filteredRecipes = recipes.filter(recipe => recipe.title.toLowerCase().includes(searchInput));
 
@@ -79,5 +79,4 @@ function createRecipeHTML(recipe) {
   return recipeDiv;
 }
 
-
-// searchRecipes();  
+// searchRecipes();
