@@ -84,3 +84,27 @@ function createRecipeHTML(recipe) {
 
 // Kör funktionen när sidan laddas
 window.onload = fetchAndDisplayData;
+
+//kontakt forum
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+  event.preventDefault(); // Prevent the form from submitting the default way
+  alert("Your email has been sent!");
+  document.getElementById("contactForm").reset()
+});
+
+//scrolla up
+function backToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+  
+window.onscroll = function() {
+  var btn = document.getElementById("backToTopBtn");
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
+  }
+};
