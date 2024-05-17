@@ -52,9 +52,15 @@ body {
   text-decoration: none;
 }
 
+.intro-offers {
+  margin-top: 100px;
+  font-size: 50px;
+  text-align: center;
+}
+
 .offer-section {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 30px;
 }
 
 .offer-section h2 {
@@ -65,6 +71,7 @@ body {
 
 .offer-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-top: 20px;
 }

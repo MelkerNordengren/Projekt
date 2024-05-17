@@ -1,49 +1,45 @@
- async function fetchAndDisplayData() {
-    const url = 'https://the-birthday-cake-db.p.rapidapi.com/10';
-    const options = {
-      method: 'GET',
-      headers: {
-        'X-RapidAPI-Key': '02502b8f42msh0ca4d892530db77p13701fjsn1ffae936b9a9',
-        'X-RapidAPI-Host': 'the-birthday-cake-db.p.rapidapi.com'
-      }
-    };
-
-    try {
-      const response = await fetch(url, options);
-      const result = await response.text();
-      console.log(result)
-      // Skapa en ny <div> för att visa API-resultatet
-      const apiResultDiv = document.createElement('div');
-      apiResultDiv.innerHTML = result;
-
-      // Hitta den befintliga <div> där du vill lägga till API-resultatet
-      const containerDiv = document.getElementById('apiResult');
-
-      // Lägg till den nya <div> i den befintliga <div>
-      containerDiv.appendChild(apiResultDiv);
-      console.log(apiResultDiv)
-    } catch (error) {
-      console.error(error);
+async function fetchAndDisplayData() {
+  const url = 'https://the-birthday-cake-db.p.rapidapi.com/10';
+  const options = {
+    method: 'GET',
+    headers: {
+      'X-RapidAPI-Key': '02502b8f42msh0ca4d892530db77p13701fjsn1ffae936b9a9',
+      'X-RapidAPI-Host': 'the-birthday-cake-db.p.rapidapi.com'
     }
-  }
-  
-  // Kör funktionen när sidan laddas
-  window.onload = fetchAndDisplayData;
+  };
 
- 
+  try {
+    const response = await fetch(url, options);
+    const result = await response.text();
+    console.log(result)
+
+    // Skapa en ny <div> för att visa API-resultatet
+    const apiResultDiv = document.createElement('div');
+    apiResultDiv.innerHTML = result;
+
+    // Hitta den befintliga <div> där du vill lägga till API-resultatet
+    const containerDiv = document.getElementById('apiResult');
+
+    // Lägg till den nya <div> i den befintliga <div>
+    containerDiv.appendChild(apiResultDiv);
+  } catch (error) {
+    console.error(error);
+  }
+}
+
 const recipes = [
   {
     id: "1",
     title: "Vegan Chocolate Cake",
     image: "https://apipics.s3.amazonaws.com/cakes_api/10.jpg"
- 
   },
   {
     id: "2",
     title: "Vegan Lasagna",
-   
+    image: ""
+    
   },
-
+  
 ];
 
 // Function to display recipes based on search query
@@ -74,9 +70,17 @@ function createRecipeHTML(recipe) {
   const title = document.createElement("h2");
   title.textContent = recipe.title;
 
+  if (recipe.image) {
+    const image = document.createElement("img");
+    image.src = recipe.image;
+    image.alt = recipe.title;
+    recipeDiv.appendChild(image);
+  }
+
   recipeDiv.appendChild(title);
 
   return recipeDiv;
 }
 
-// searchRecipes();
+// Kör funktionen när sidan laddas
+window.onload = fetchAndDisplayData;
